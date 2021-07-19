@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
+    <title>Apache Access Log</title>
+</head>
+<body>
+    <table class="styled-table">
+        <caption>Log Entry List</caption>
+        <thead>
+        <tr>
+            <th scope="col">Source</th>
+            <th scope="col">IP Address</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="logEntry : ${logEntries}">
+            <td data-label="Source" th:text="${logEntry.source}">/test</td>
+            <td data-label="IP Address" th:text="${logEntry.ipAddr}">1.1.1.1</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

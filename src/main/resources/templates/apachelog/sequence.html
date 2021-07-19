@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
+    <title>Apache Access Log</title>
+</head>
+<body>
+    <table class="styled-table">
+        <caption>Most Common Three Page Sequences Accessed by Users</caption>
+        <thead>
+        <tr>
+            <th scope="col">Source</th>
+            <th scope="col">Sequence (referral-source-destination)</th>
+            <th scope="col">Count</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="sequence : ${sequences}">
+            <td data-label="Source" th:text="${sequence.source}">/test</td>
+            <td data-label="Sequence" th:text="${sequence.sequence}">/test1/ --> /test2/ --> /test3/</td>
+            <td data-label="Count" th:text="${sequence.count}">0</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
