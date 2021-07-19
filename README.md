@@ -2,6 +2,10 @@
 
 Log Entry is a simple Spring Boot application that allows us to query Apache Access Log files. This initial version has two defined endpoints. 
 
+# Installation
+
+Log entry can be accessed at: https://logentry.herokuapp.com/apachelog/sequence
+
 ## Source file 
 The Apache Access log file is read from https://files.inspiringapps.com/IAChallenge/30E02AAA-B947-4D4B-8FB6-9C57C43872A9/Apache.log. The log elements are stored in an embedded H2 database for further query.
 
@@ -19,3 +23,5 @@ This app can be expanded to find much more data from the log file, by defining S
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+https://git.heroku.com/arcane-lowlands-36776.git
