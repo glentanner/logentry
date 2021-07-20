@@ -23,5 +23,3 @@ This app can be expanded to find much more data from the log file, by defining S
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
-https://git.heroku.com/arcane-lowlands-36776.git
