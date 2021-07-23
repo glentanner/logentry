@@ -41,7 +41,7 @@ public class BootStrapData implements CommandLineRunner {
         List<LogEntry> requestRecordList = new ArrayList<>();
 
         // Hard coded URL
-        //URL url = new URL("https://files.inspiringapps.com/IAChallenge/30E02AAA-B947-4D4B-8FB6-9C57C43872A9/Apache.log");
+        //URL url = new URL("https://www.grtanner.com/apache/access.log");
         String regex = "^([\\d.]+) (\\S+) (\\S+) \\[([\\w:/]+\\s[+-]\\d{4})\\] \"(.+?)\" (\\d{3}) (\\d+) \"([^\"]+)\" \"(.+?)\"";
         Pattern p = Pattern.compile(regex);
 

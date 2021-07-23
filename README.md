@@ -7,7 +7,7 @@ Log Entry is a simple Spring Boot application that allows us to query Apache Acc
 Log entry can be accessed at: https://logentry.herokuapp.com/apachelog/sequence
 
 ## Source file 
-The Apache Access log file is read from https://files.inspiringapps.com/IAChallenge/30E02AAA-B947-4D4B-8FB6-9C57C43872A9/Apache.log. The log elements are stored in an embedded H2 database for further query.
+The Apache Access log file is read from https://www.grtanner.com/apache/access.log. The log elements are stored in an embedded H2 database for further query.
 
 ## Endpoints
 The log is stored in a log_entry table with the fields: id, bytes_sent, ip_addr, referer, request, source, status_code, timestamp, user_agent, user_id, and username.
